@@ -1,0 +1,25 @@
+
+package com.elainemoura.certification.modules.students.useCases;
+
+import org.springframework.stereotype.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import com.elainemoura.certification.modules.students.dto.VerifyHasCertificationDTO;
+import com.elainemoura.certification.modules.students.repositories.CertificationStudentRepository;
+
+
+@Service
+public class VerifyIfHasCertificationUseCase {
+
+    @Autowired
+    private CertificationStudentRepository certificationStudentRepository;
+           
+    public boolean execute(VerifyHasCertificationDTO dto){
+         var result= this.certificationStudentRepository.findByStudentEmailAndTechnology(dto.getEmail(), dto.getTechnology());
+         if (!result.isEmpty()){                         
+            return true;
+         }
+             
+        return false;
+    }
+}

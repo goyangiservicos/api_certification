@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CreateSeed",
+            "request": "launch",
+            "mainClass": "com.elainemoura.certification.seed.CreateSeed",
+            "projectName": "certification"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CertificationApplication<certification>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.elainemoura.certification.CertificationApplication",
+            "projectName": "certification",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

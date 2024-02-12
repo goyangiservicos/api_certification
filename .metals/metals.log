@@ -1,0 +1,1446 @@
+2024.02.07 15:23:08 INFO  Started: Metals version 1.2.1 in folders 'C:\certification' for client Visual Studio Code 1.86.0.
+15:23:09.843 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+15:23:09.850 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+15:23:09.851 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+15:23:09.859 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+15:23:09.859 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+15:23:09.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+15:23:09.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+15:23:09.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 ...
+15:23:09.861 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Itshare/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.1/metals_2.13-1.2.1.jar!/db/migration
+15:23:09.873 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+15:23:09.875 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+15:23:09.875 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+15:23:09.875 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+15:23:09.875 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+15:23:09.875 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+15:23:09.885 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:09.886 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+15:23:09.888 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+15:23:09.889 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+15:23:09.889 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+15:23:10.030 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\certification\.metals\metals (H2 2.2)
+15:23:10.031 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+15:23:10.031 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+15:23:10.033 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+15:23:10.034 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+15:23:10.042 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+15:23:10.045 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+15:23:10.045 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:10.061 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+15:23:10.070 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:10.088 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:23:10.089 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:23:10.089 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:10.089 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:23:10.089 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:23:10.090 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:23:10.090 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:23:10.090 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:23:10.090 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:23:10.090 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:23:10.094 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+15:23:10.101 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.038s)
+15:23:10.105 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+15:23:10.111 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+15:23:10.116 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+15:23:10.131 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+15:23:10.132 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+15:23:10.132 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+15:23:10.139 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.140 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+15:23:10.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+15:23:10.157 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+15:23:10.158 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+15:23:10.160 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+15:23:10.162 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+15:23:10.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+15:23:10.164 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+15:23:10.165 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+15:23:10.167 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+15:23:10.168 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+15:23:10.170 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+15:23:10.173 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.173 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+15:23:10.175 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.175 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+15:23:10.176 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.176 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+15:23:10.177 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.178 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+15:23:10.180 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.181 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+15:23:10.188 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+15:23:10.200 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+15:23:10.204 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+15:23:10.204 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+15:23:10.205 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+15:23:10.206 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+15:23:10.207 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.208 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+15:23:10.210 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+15:23:10.212 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+15:23:10.214 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+15:23:10.216 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+15:23:10.218 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+15:23:10.218 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+15:23:10.219 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+15:23:10.219 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+15:23:10.225 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.225 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+15:23:10.234 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.234 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+15:23:10.236 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.236 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+15:23:10.239 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+15:23:10.241 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+15:23:10.244 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+15:23:10.244 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+15:23:10.244 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+15:23:10.245 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+15:23:10.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:23:10.248 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+15:23:10.250 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+15:23:10.261 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.037s)
+15:23:10.280 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 45 of 100M
+fev 07, 2024 3:23:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+fev 07, 2024 3:23:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2024.02.07 15:23:11 WARN  Build server is not auto-connectable.
+2024.02.07 15:23:23 INFO  no build target found for C:\certification\scale.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.07 15:23:25 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+2024.02.07 15:36:32 WARN  Could not find semantic tokens for: file:///C:/certification/scale.sbt
+fev 07, 2024 3:36:39 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-36-39-816.md
+fev 07, 2024 3:36:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-36-44-401.md
+fev 07, 2024 3:36:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-36-45-012.md
+fev 07, 2024 3:36:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-36-48-212.md
+fev 07, 2024 3:36:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-36-48-380.md
+fev 07, 2024 3:37:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-25-607.md
+fev 07, 2024 3:37:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-27-955.md
+2024.02.07 15:37:28 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+2024.02.07 15:37:29 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+2024.02.07 15:37:29 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:37:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-30-648.md
+2024.02.07 15:37:31 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:37:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-31-536.md
+fev 07, 2024 3:37:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-31-824.md
+fev 07, 2024 3:37:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-52-363.md
+fev 07, 2024 3:37:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-52-638.md
+fev 07, 2024 3:37:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-53-177.md
+2024.02.07 15:37:53 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:37:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-53-594.md
+2024.02.07 15:37:54 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:37:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-54-585.md
+fev 07, 2024 3:37:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-37-59-778.md
+2024.02.07 15:38:03 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-04-237.md
+fev 07, 2024 3:38:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-04-925.md
+2024.02.07 15:38:04 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-05-765.md
+2024.02.07 15:38:06 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-06-531.md
+fev 07, 2024 3:38:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-07-071.md
+2024.02.07 15:38:07 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-07-697.md
+fev 07, 2024 3:38:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-08-378.md
+2024.02.07 15:38:08 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-09-683.md
+2024.02.07 15:38:09 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-15-280.md
+fev 07, 2024 3:38:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-15-668.md
+fev 07, 2024 3:38:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-15-920.md
+fev 07, 2024 3:38:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-16-623.md
+2024.02.07 15:38:19 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-19-731.md
+fev 07, 2024 3:38:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-24-745.md
+fev 07, 2024 3:38:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-24-961.md
+fev 07, 2024 3:38:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-25-703.md
+fev 07, 2024 3:38:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-26-136.md
+2024.02.07 15:38:27 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-27-378.md
+fev 07, 2024 3:38:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-28-110.md
+fev 07, 2024 3:38:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-28-581.md
+2024.02.07 15:38:28 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-28-835.md
+fev 07, 2024 3:38:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-29-817.md
+fev 07, 2024 3:38:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-30-209.md
+2024.02.07 15:38:30 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-30-812.md
+2024.02.07 15:38:31 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-31-875.md
+fev 07, 2024 3:38:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-32-512.md
+fev 07, 2024 3:38:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-32-896.md
+fev 07, 2024 3:38:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-38-591.md
+fev 07, 2024 3:38:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-38-990.md
+fev 07, 2024 3:38:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-54-338.md
+fev 07, 2024 3:38:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-54-788.md
+fev 07, 2024 3:38:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-55-347.md
+2024.02.07 15:38:55 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-55-811.md
+2024.02.07 15:38:56 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:38:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-56-426.md
+fev 07, 2024 3:38:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-59-445.md
+fev 07, 2024 3:38:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-38-59-794.md
+fev 07, 2024 3:39:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-00-303.md
+2024.02.07 15:39:00 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+2024.02.07 15:39:03 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-03-134.md
+fev 07, 2024 3:39:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-03-480.md
+fev 07, 2024 3:39:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-03-837.md
+fev 07, 2024 3:39:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-04-581.md
+2024.02.07 15:39:04 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-05-084.md
+fev 07, 2024 3:39:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-05-197.md
+fev 07, 2024 3:39:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-05-447.md
+fev 07, 2024 3:39:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-05-606.md
+fev 07, 2024 3:39:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-05-737.md
+2024.02.07 15:39:05 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-06-268.md
+fev 07, 2024 3:39:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-06-624.md
+fev 07, 2024 3:39:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-06-861.md
+fev 07, 2024 3:39:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-07-157.md
+fev 07, 2024 3:39:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-07-360.md
+2024.02.07 15:39:07 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-07-633.md
+fev 07, 2024 3:39:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-08-654.md
+fev 07, 2024 3:39:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-08-853.md
+2024.02.07 15:39:09 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-09-357.md
+fev 07, 2024 3:39:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-10-489.md
+fev 07, 2024 3:39:11 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-11-028.md
+2024.02.07 15:39:11 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+2024.02.07 15:39:12 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-13-146.md
+2024.02.07 15:39:14 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-14-295.md
+fev 07, 2024 3:39:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-17-617.md
+fev 07, 2024 3:39:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-23-461.md
+fev 07, 2024 3:39:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-27-828.md
+2024.02.07 15:39:28 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-28-295.md
+fev 07, 2024 3:39:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-29-057.md
+2024.02.07 15:39:29 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-29-698.md
+fev 07, 2024 3:39:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-30-108.md
+fev 07, 2024 3:39:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-30-492.md
+fev 07, 2024 3:39:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-31-212.md
+fev 07, 2024 3:39:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-32-332.md
+fev 07, 2024 3:39:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-35-435.md
+fev 07, 2024 3:39:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-35-885.md
+fev 07, 2024 3:39:36 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-36-821.md
+2024.02.07 15:39:39 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-40-099.md
+fev 07, 2024 3:39:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-40-290.md
+fev 07, 2024 3:39:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-40-686.md
+2024.02.07 15:39:41 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-41-232.md
+fev 07, 2024 3:39:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-41-677.md
+2024.02.07 15:39:42 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-42-150.md
+2024.02.07 15:39:43 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-43-585.md
+fev 07, 2024 3:39:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-44-339.md
+fev 07, 2024 3:39:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-44-804.md
+fev 07, 2024 3:39:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-45-234.md
+2024.02.07 15:39:45 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-46-393.md
+fev 07, 2024 3:39:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-46-855.md
+fev 07, 2024 3:39:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-47-344.md
+fev 07, 2024 3:39:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-47-792.md
+fev 07, 2024 3:39:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-48-344.md
+fev 07, 2024 3:39:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-48-861.md
+2024.02.07 15:39:49 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-49-634.md
+2024.02.07 15:39:49 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+2024.02.07 15:39:50 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-50-434.md
+2024.02.07 15:39:51 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:39:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-51-630.md
+fev 07, 2024 3:39:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-53-959.md
+fev 07, 2024 3:39:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-39-54-543.md
+fev 07, 2024 3:40:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-02-681.md
+fev 07, 2024 3:40:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-05-889.md
+fev 07, 2024 3:40:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-08-737.md
+fev 07, 2024 3:40:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-09-194.md
+fev 07, 2024 3:40:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-09-661.md
+fev 07, 2024 3:40:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-10-100.md
+fev 07, 2024 3:40:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-10-515.md
+fev 07, 2024 3:40:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-10-976.md
+2024.02.07 15:40:22 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:40:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-22-734.md
+2024.02.07 15:40:23 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:40:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-24-020.md
+fev 07, 2024 3:40:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-24-700.md
+2024.02.07 15:40:24 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:40:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-25-791.md
+2024.02.07 15:40:24 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:40:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-25-997.md
+2024.02.07 15:40:26 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:40:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-26-601.md
+fev 07, 2024 3:40:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-27-546.md
+2024.02.07 15:40:27 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:40:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-27-901.md
+2024.02.07 15:40:29 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:40:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-29-285.md
+2024.02.07 15:40:32 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:40:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-32-277.md
+fev 07, 2024 3:40:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-40-57-651.md
+2024.02.07 15:41:00 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:41:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-41-00-305.md
+fev 07, 2024 3:41:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-41-06-204.md
+fev 07, 2024 3:41:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-41-07-033.md
+fev 07, 2024 3:41:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-41-26-618.md
+fev 07, 2024 3:42:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-07-618.md
+fev 07, 2024 3:42:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-09-518.md
+fev 07, 2024 3:42:12 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-12-091.md
+fev 07, 2024 3:42:12 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-12-636.md
+2024.02.07 15:42:12 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+2024.02.07 15:42:12 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:42:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-13-398.md
+fev 07, 2024 3:42:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-13-991.md
+fev 07, 2024 3:42:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-14-633.md
+2024.02.07 15:42:14 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:42:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-18-510.md
+fev 07, 2024 3:42:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-20-387.md
+fev 07, 2024 3:42:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-20-846.md
+2024.02.07 15:42:20 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:42:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-21-620.md
+2024.02.07 15:42:21 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+2024.02.07 15:42:22 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:42:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-22-993.md
+2024.02.07 15:42:23 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:42:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-23-685.md
+fev 07, 2024 3:42:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-24-167.md
+2024.02.07 15:42:24 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:42:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-24-755.md
+fev 07, 2024 3:42:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-25-472.md
+fev 07, 2024 3:42:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-26-158.md
+fev 07, 2024 3:42:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-26-685.md
+2024.02.07 15:42:27 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:42:36 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-36-081.md
+fev 07, 2024 3:42:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-42-46-524.md
+fev 07, 2024 3:43:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-43-06-224.md
+2024.02.07 15:43:10 WARN  no build target for: C:\certification\certification\src\main\java\com\elainemoura\certification\PrimeiraController.java
+fev 07, 2024 3:43:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-43-10-988.md
+fev 07, 2024 3:44:34 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-44-34-646.md
+fev 07, 2024 3:45:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-15-479.md
+fev 07, 2024 3:45:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-19-016.md
+fev 07, 2024 3:45:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-20-691.md
+fev 07, 2024 3:45:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-41-673.md
+fev 07, 2024 3:45:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-50-987.md
+fev 07, 2024 3:45:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-51-543.md
+fev 07, 2024 3:45:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-51-927.md
+fev 07, 2024 3:45:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-52-789.md
+fev 07, 2024 3:45:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-53-307.md
+fev 07, 2024 3:45:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-53-661.md
+fev 07, 2024 3:45:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-53-712.md
+fev 07, 2024 3:45:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-53-893.md
+fev 07, 2024 3:45:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-54-118.md
+fev 07, 2024 3:45:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-55-306.md
+fev 07, 2024 3:45:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-55-466.md
+fev 07, 2024 3:45:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-55-812.md
+fev 07, 2024 3:45:56 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-56-797.md
+fev 07, 2024 3:45:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-57-180.md
+fev 07, 2024 3:45:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-57-292.md
+fev 07, 2024 3:45:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-58-099.md
+fev 07, 2024 3:45:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-58-554.md
+fev 07, 2024 3:45:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-58-695.md
+fev 07, 2024 3:45:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-58-809.md
+fev 07, 2024 3:45:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-58-858.md
+fev 07, 2024 3:45:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-45-59-421.md
+fev 07, 2024 3:46:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-00-210.md
+fev 07, 2024 3:46:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-00-545.md
+fev 07, 2024 3:46:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-01-218.md
+fev 07, 2024 3:46:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-01-488.md
+fev 07, 2024 3:46:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-02-698.md
+fev 07, 2024 3:46:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-02-947.md
+fev 07, 2024 3:46:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-03-173.md
+fev 07, 2024 3:46:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-03-279.md
+fev 07, 2024 3:46:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-03-386.md
+fev 07, 2024 3:46:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-03-702.md
+fev 07, 2024 3:46:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-06-169.md
+fev 07, 2024 3:46:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-13-126.md
+fev 07, 2024 3:46:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-15-714.md
+fev 07, 2024 3:46:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-17-533.md
+fev 07, 2024 3:46:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-18-328.md
+fev 07, 2024 3:46:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-18-794.md
+fev 07, 2024 3:46:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-19-583.md
+fev 07, 2024 3:46:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-19-640.md
+fev 07, 2024 3:46:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-19-955.md
+fev 07, 2024 3:46:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-20-526.md
+fev 07, 2024 3:46:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-21-091.md
+fev 07, 2024 3:46:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-22-974.md
+fev 07, 2024 3:46:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-23-960.md
+fev 07, 2024 3:46:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-24-414.md
+fev 07, 2024 3:46:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-24-853.md
+fev 07, 2024 3:46:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-25-287.md
+fev 07, 2024 3:46:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-25-750.md
+fev 07, 2024 3:46:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-26-224.md
+fev 07, 2024 3:46:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-27-153.md
+fev 07, 2024 3:46:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-27-565.md
+fev 07, 2024 3:46:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-27-884.md
+fev 07, 2024 3:46:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-35-444.md
+fev 07, 2024 3:46:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-35-822.md
+fev 07, 2024 3:46:36 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-36-965.md
+fev 07, 2024 3:46:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-37-972.md
+fev 07, 2024 3:46:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-38-555.md
+fev 07, 2024 3:46:39 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-39-510.md
+fev 07, 2024 3:46:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-40-411.md
+fev 07, 2024 3:46:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-40-893.md
+fev 07, 2024 3:46:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-47-739.md
+fev 07, 2024 3:46:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-48-246.md
+fev 07, 2024 3:46:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-50-325.md
+fev 07, 2024 3:46:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-52-325.md
+fev 07, 2024 3:46:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-52-758.md
+fev 07, 2024 3:46:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-53-102.md
+fev 07, 2024 3:46:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-53-290.md
+fev 07, 2024 3:46:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-53-864.md
+fev 07, 2024 3:46:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-54-474.md
+fev 07, 2024 3:46:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-54-984.md
+fev 07, 2024 3:46:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-55-448.md
+fev 07, 2024 3:46:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-58-486.md
+fev 07, 2024 3:46:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-58-962.md
+fev 07, 2024 3:46:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-59-004.md
+fev 07, 2024 3:46:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-59-280.md
+fev 07, 2024 3:46:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-46-59-889.md
+fev 07, 2024 3:47:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-00-417.md
+fev 07, 2024 3:47:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-01-075.md
+fev 07, 2024 3:47:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-01-530.md
+fev 07, 2024 3:47:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-02-500.md
+fev 07, 2024 3:47:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-04-651.md
+fev 07, 2024 3:47:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-06-339.md
+fev 07, 2024 3:47:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-07-936.md
+fev 07, 2024 3:47:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-08-055.md
+fev 07, 2024 3:47:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-08-195.md
+fev 07, 2024 3:47:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-08-241.md
+fev 07, 2024 3:47:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-08-653.md
+fev 07, 2024 3:47:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-08-788.md
+fev 07, 2024 3:47:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-10-156.md
+fev 07, 2024 3:47:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-13-059.md
+fev 07, 2024 3:47:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-13-488.md
+fev 07, 2024 3:47:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-17-428.md
+fev 07, 2024 3:47:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-22-254.md
+fev 07, 2024 3:47:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-23-932.md
+fev 07, 2024 3:47:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-24-369.md
+fev 07, 2024 3:47:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-25-806.md
+fev 07, 2024 3:47:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-29-709.md
+fev 07, 2024 3:47:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-32-075.md
+fev 07, 2024 3:47:34 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-34-904.md
+fev 07, 2024 3:47:36 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-36-130.md
+fev 07, 2024 3:47:36 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-36-527.md
+fev 07, 2024 3:47:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-37-289.md
+fev 07, 2024 3:47:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-37-708.md
+fev 07, 2024 3:47:39 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-39-561.md
+fev 07, 2024 3:47:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-43-441.md
+fev 07, 2024 3:47:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-44-131.md
+fev 07, 2024 3:47:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-49-671.md
+fev 07, 2024 3:47:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-51-129.md
+fev 07, 2024 3:47:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-52-562.md
+fev 07, 2024 3:47:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-52-924.md
+fev 07, 2024 3:47:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-54-544.md
+fev 07, 2024 3:47:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-47-55-921.md
+fev 07, 2024 3:48:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-09-140.md
+fev 07, 2024 3:48:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-09-484.md
+fev 07, 2024 3:48:12 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-12-374.md
+fev 07, 2024 3:48:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-13-186.md
+fev 07, 2024 3:48:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-15-198.md
+fev 07, 2024 3:48:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-16-053.md
+fev 07, 2024 3:48:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-16-300.md
+fev 07, 2024 3:48:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-16-582.md
+fev 07, 2024 3:48:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-19-005.md
+fev 07, 2024 3:48:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-23-005.md
+fev 07, 2024 3:48:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-23-192.md
+fev 07, 2024 3:48:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-29-415.md
+fev 07, 2024 3:48:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-48-55-267.md
+fev 07, 2024 3:49:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-01-442.md
+fev 07, 2024 3:49:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-01-597.md
+fev 07, 2024 3:49:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-20-191.md
+fev 07, 2024 3:49:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-20-990.md
+fev 07, 2024 3:49:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-21-363.md
+fev 07, 2024 3:49:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-21-685.md
+fev 07, 2024 3:49:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-23-345.md
+fev 07, 2024 3:49:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-23-637.md
+fev 07, 2024 3:49:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-30-894.md
+fev 07, 2024 3:49:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-31-684.md
+fev 07, 2024 3:49:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-33-965.md
+fev 07, 2024 3:49:34 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-34-596.md
+fev 07, 2024 3:49:36 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-36-375.md
+fev 07, 2024 3:49:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-37-499.md
+fev 07, 2024 3:49:37 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-37-620.md
+fev 07, 2024 3:49:41 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-41-861.md
+fev 07, 2024 3:49:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-48-705.md
+fev 07, 2024 3:49:49 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-49-529.md
+fev 07, 2024 3:49:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-50-005.md
+fev 07, 2024 3:49:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 935
+fev 07, 2024 3:49:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-49-50-278.md
+fev 07, 2024 3:50:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-50-13-178.md
+fev 07, 2024 3:50:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-50-13-832.md
+fev 07, 2024 3:50:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-50-14-413.md
+fev 07, 2024 3:50:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-50-18-075.md
+fev 07, 2024 3:50:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-50-57-624.md
+fev 07, 2024 3:50:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-50-58-684.md
+fev 07, 2024 3:51:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-00-335.md
+fev 07, 2024 3:51:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-01-333.md
+fev 07, 2024 3:51:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-01-656.md
+fev 07, 2024 3:51:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-03-629.md
+fev 07, 2024 3:51:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-05-039.md
+fev 07, 2024 3:51:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-06-971.md
+fev 07, 2024 3:51:11 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-11-324.md
+fev 07, 2024 3:51:11 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-11-582.md
+fev 07, 2024 3:51:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-15-730.md
+fev 07, 2024 3:51:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-16-096.md
+fev 07, 2024 3:51:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-19-895.md
+fev 07, 2024 3:51:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-20-963.md
+fev 07, 2024 3:51:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-21-811.md
+fev 07, 2024 3:51:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-22-475.md
+fev 07, 2024 3:51:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-30-578.md
+fev 07, 2024 3:51:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-30-775.md
+fev 07, 2024 3:51:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-32-490.md
+fev 07, 2024 3:51:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-51-33-766.md
+fev 07, 2024 3:52:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-16-040.md
+fev 07, 2024 3:52:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-17-080.md
+fev 07, 2024 3:52:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-17-141.md
+fev 07, 2024 3:52:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-18-182.md
+fev 07, 2024 3:52:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-19-210.md
+fev 07, 2024 3:52:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-21-457.md
+fev 07, 2024 3:52:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-22-639.md
+fev 07, 2024 3:52:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-22-913.md
+fev 07, 2024 3:52:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-52-33-709.md
+fev 07, 2024 3:53:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-08-530.md
+fev 07, 2024 3:53:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-08-825.md
+fev 07, 2024 3:53:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-18-127.md
+fev 07, 2024 3:53:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-18-469.md
+fev 07, 2024 3:53:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-19-555.md
+fev 07, 2024 3:53:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-27-111.md
+fev 07, 2024 3:53:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-28-943.md
+fev 07, 2024 3:53:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-35-765.md
+fev 07, 2024 3:53:40 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-40-971.md
+fev 07, 2024 3:53:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-45-810.md
+fev 07, 2024 3:53:47 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-47-433.md
+2024.02.07 15:53:52 WARN  no build target for: C:\certification\certification\src\main\java\com\elainemoura\certification\PrimeiraController.java
+fev 07, 2024 3:53:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-52-385.md
+fev 07, 2024 3:53:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-53-403.md
+fev 07, 2024 3:53:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-53-702.md
+fev 07, 2024 3:53:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2090)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:43)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:38)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionInputOffset.toOffset(ScalametaCommonEnrichments.scala:525)
+	at scala.meta.internal.mtags.JavaMtags.toRangePosition(JavaMtags.scala:66)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitMethods$1(JavaMtags.scala:169)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitMethods$1$adapted(JavaMtags.scala:166)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.visitMethods(JavaMtags.scala:166)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClass$1(JavaMtags.scala:117)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner(MtagsIndexer.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner$(MtagsIndexer.scala:45)
+	at scala.meta.internal.mtags.JavaMtags.withOwner(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.JavaMtags.visitClass(JavaMtags.scala:107)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClasses$1(JavaMtags.scala:91)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClasses$1$adapted(JavaMtags.scala:91)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.visitClasses(JavaMtags.scala:91)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClass$1(JavaMtags.scala:115)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner(MtagsIndexer.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner$(MtagsIndexer.scala:45)
+	at scala.meta.internal.mtags.JavaMtags.withOwner(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.JavaMtags.visitClass(JavaMtags.scala:107)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$indexRoot$2(JavaMtags.scala:48)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$indexRoot$2$adapted(JavaMtags.scala:48)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.indexRoot(JavaMtags.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.JavaMtags.index(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:121)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:376)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:296)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:296)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:288)
+	at scala.meta.internal.metals.JavaDocumentHighlightProvider.$anonfun$documentHighlight$1(JavaDocumentHighlightProvider.scala:26)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.metals.JavaDocumentHighlightProvider.documentHighlight(JavaDocumentHighlightProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$documentHighlights$1(MetalsLspService.scala:1447)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+fev 07, 2024 3:53:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-53-57-890.md
+2024.02.07 15:54:01 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:54:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-54-01-712.md
+fev 07, 2024 3:54:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-54-03-534.md
+fev 07, 2024 3:54:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2090)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:43)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:38)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionInputOffset.toOffset(ScalametaCommonEnrichments.scala:525)
+	at scala.meta.internal.mtags.JavaMtags.toRangePosition(JavaMtags.scala:66)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitMethods$1(JavaMtags.scala:169)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitMethods$1$adapted(JavaMtags.scala:166)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.visitMethods(JavaMtags.scala:166)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClass$1(JavaMtags.scala:117)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner(MtagsIndexer.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner$(MtagsIndexer.scala:45)
+	at scala.meta.internal.mtags.JavaMtags.withOwner(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.JavaMtags.visitClass(JavaMtags.scala:107)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClasses$1(JavaMtags.scala:91)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClasses$1$adapted(JavaMtags.scala:91)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.visitClasses(JavaMtags.scala:91)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClass$1(JavaMtags.scala:115)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner(MtagsIndexer.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner$(MtagsIndexer.scala:45)
+	at scala.meta.internal.mtags.JavaMtags.withOwner(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.JavaMtags.visitClass(JavaMtags.scala:107)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$indexRoot$2(JavaMtags.scala:48)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$indexRoot$2$adapted(JavaMtags.scala:48)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.indexRoot(JavaMtags.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.JavaMtags.index(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:121)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:376)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:296)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:296)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:288)
+	at scala.meta.internal.metals.JavaDocumentHighlightProvider.$anonfun$documentHighlight$1(JavaDocumentHighlightProvider.scala:26)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.metals.JavaDocumentHighlightProvider.documentHighlight(JavaDocumentHighlightProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$documentHighlights$1(MetalsLspService.scala:1447)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+fev 07, 2024 3:54:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-54-04-421.md
+2024.02.07 15:54:07 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:54:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-54-07-348.md
+fev 07, 2024 3:54:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-54-09-842.md
+2024.02.07 15:54:10 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:54:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:43)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:38)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionInputOffset.toOffset(ScalametaCommonEnrichments.scala:525)
+	at scala.meta.internal.mtags.JavaMtags.toRangePosition(JavaMtags.scala:66)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitMethods$1(JavaMtags.scala:169)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitMethods$1$adapted(JavaMtags.scala:166)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.visitMethods(JavaMtags.scala:166)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClass$1(JavaMtags.scala:117)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner(MtagsIndexer.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner$(MtagsIndexer.scala:45)
+	at scala.meta.internal.mtags.JavaMtags.withOwner(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.JavaMtags.visitClass(JavaMtags.scala:107)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClasses$1(JavaMtags.scala:91)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClasses$1$adapted(JavaMtags.scala:91)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.visitClasses(JavaMtags.scala:91)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClass$1(JavaMtags.scala:115)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner(MtagsIndexer.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner$(MtagsIndexer.scala:45)
+	at scala.meta.internal.mtags.JavaMtags.withOwner(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.JavaMtags.visitClass(JavaMtags.scala:107)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$indexRoot$2(JavaMtags.scala:48)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$indexRoot$2$adapted(JavaMtags.scala:48)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.indexRoot(JavaMtags.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.JavaMtags.index(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:121)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:376)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:296)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:296)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:288)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2564)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2560)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1404)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1403)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+fev 07, 2024 3:55:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-18-899.md
+2024.02.07 15:55:18 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:55:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-19-171.md
+fev 07, 2024 3:55:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-19-907.md
+fev 07, 2024 3:55:20 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-20-462.md
+2024.02.07 15:55:22 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:55:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-22-974.md
+2024.02.07 15:55:23 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:55:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-23-441.md
+fev 07, 2024 3:55:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-24-485.md
+fev 07, 2024 3:55:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2090)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid line number, allowed [0..19]
+	at scala.meta.internal.inputs.InternalInput.lineToOffset(InternalInput.scala:43)
+	at scala.meta.internal.inputs.InternalInput.lineToOffset$(InternalInput.scala:38)
+	at scala.meta.inputs.Input$VirtualFile.lineToOffset(Input.scala:80)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionInputOffset.toOffset(ScalametaCommonEnrichments.scala:525)
+	at scala.meta.internal.mtags.JavaMtags.toRangePosition(JavaMtags.scala:66)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitMethods$1(JavaMtags.scala:169)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitMethods$1$adapted(JavaMtags.scala:166)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.visitMethods(JavaMtags.scala:166)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClass$1(JavaMtags.scala:117)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner(MtagsIndexer.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner$(MtagsIndexer.scala:45)
+	at scala.meta.internal.mtags.JavaMtags.withOwner(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.JavaMtags.visitClass(JavaMtags.scala:107)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClasses$1(JavaMtags.scala:91)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClasses$1$adapted(JavaMtags.scala:91)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.visitClasses(JavaMtags.scala:91)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$visitClass$1(JavaMtags.scala:115)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner(MtagsIndexer.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.withOwner$(MtagsIndexer.scala:45)
+	at scala.meta.internal.mtags.JavaMtags.withOwner(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.JavaMtags.visitClass(JavaMtags.scala:107)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$indexRoot$2(JavaMtags.scala:48)
+	at scala.meta.internal.mtags.JavaMtags.$anonfun$indexRoot$2$adapted(JavaMtags.scala:48)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.mtags.JavaMtags.indexRoot(JavaMtags.scala:48)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.JavaMtags.index(JavaMtags.scala:30)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:121)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:376)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:296)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:296)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:288)
+	at scala.meta.internal.metals.JavaDocumentHighlightProvider.$anonfun$documentHighlight$1(JavaDocumentHighlightProvider.scala:26)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.meta.internal.metals.JavaDocumentHighlightProvider.documentHighlight(JavaDocumentHighlightProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$documentHighlights$1(MetalsLspService.scala:1447)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.07 15:55:25 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:55:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-25-857.md
+2024.02.07 15:55:34 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:55:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-35-021.md
+2024.02.07 15:55:35 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:55:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-35-818.md
+fev 07, 2024 3:55:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-38-650.md
+fev 07, 2024 3:55:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-42-034.md
+fev 07, 2024 3:55:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-55-43-458.md
+2024.02.07 15:56:03 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:56:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-56-03-769.md
+fev 07, 2024 3:56:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-56-10-236.md
+fev 07, 2024 3:56:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-56-10-531.md
+2024.02.07 15:56:28 WARN  Running javac-semanticdb failed for file:///C:/certification/certification/src/main/java/com/elainemoura/certification/PrimeiraController.java. Output:
+
+fev 07, 2024 3:56:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-56-28-599.md
+2024.02.07 15:56:32 WARN  no build target for: C:\certification\certification\src\main\java\com\elainemoura\certification\PrimeiraController.java
+fev 07, 2024 3:56:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-56-32-711.md
+2024.02.07 15:56:33 WARN  no build target for: C:\certification\certification\src\main\java\com\elainemoura\certification\PrimeiraController.java
+fev 07, 2024 3:56:33 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-56-33-941.md
+fev 07, 2024 3:56:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-56-38-266.md
+fev 07, 2024 3:57:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-27-884.md
+fev 07, 2024 3:57:28 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-28-304.md
+fev 07, 2024 3:57:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-29-593.md
+fev 07, 2024 3:57:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-30-253.md
+fev 07, 2024 3:57:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-30-707.md
+fev 07, 2024 3:57:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-31-511.md
+fev 07, 2024 3:57:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-31-965.md
+fev 07, 2024 3:57:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-32-768.md
+fev 07, 2024 3:57:36 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-57-36-069.md
+fev 07, 2024 3:58:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-58-25-307.md
+fev 07, 2024 3:58:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\certification\.metals\.reports\metals-full\2024-02-07\r_compiler-error_15-58-26-175.md
